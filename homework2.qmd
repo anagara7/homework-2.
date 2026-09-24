@@ -1,0 +1,18 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+# Packages
+
+
+## Question 1
+```{r}
+eval = FALSE
+install.packages("aRtsy")
+```
+
+Install.packages downloads the specific package locally to your computer for usage of the functions. Library allows you to access the specific package at any given time as long as it was downloaded onto the computer previosuly. Thus, allowing for functions to be masked accordingly based on the developers needs. 
+
+
+
