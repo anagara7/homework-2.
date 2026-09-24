@@ -27,3 +27,33 @@ The Collatz conjecture equation is a unsolved math problem that asks if repeatin
 
 The Collatz conjecture is defined as if if $n \%\% 2 = 0$ then $n \gets n/2$ else $n \gets 3n+1$, and the conjecture states that iterating $f$ on any positive integer $n$ will eventually reach $1$.
 
+## Question 3
+
+#### Part A
+
+```{r}
+library(aRtsy)
+canvas_collatz(
+  colors = c("blue"),
+  n = 10
+)
+```
+
+The function canvas_collatz() takes an empty canvas and draws lines on them based on the collatz conjecture and the parameters within the function. In this case, since colors is set to blue and n = 10 the output is 10 blue lines using a random starting integer for the collatz conjecture.
+
+#### Part B
+
+-You get a different output every time because the starting point is a random positive integer n for the collatz conjecture. Thus, the only controlled variables is the number of lines and the color of the lines.
+
+-This would be difficult to input into a .qmd file because quarto documents are not designed for varying output changes and are rather meant for rendering reproducible content.
+
+-The set seed function allows for the starting integer for the collatz conjecture to be set. Resulting in the same output everytime you run the code making it perfect for a .qmd document.
+
+```{r}
+library(aRtsy)
+set.seed(10)
+canvas_collatz(
+  colors = c("blue"), 
+  n = 10)
+```
+
