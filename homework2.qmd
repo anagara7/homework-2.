@@ -1,18 +1,29 @@
 ---
-title: "Untitled"
-format: html
+title: "homework2"
+format: pdf
 editor: visual
+author:
+  name: Aryan Nagaradona
 ---
+
 # Packages
 
-
 ## Question 1
+
 ```{r}
 eval = FALSE
 install.packages("aRtsy")
 ```
 
-Install.packages downloads the specific package locally to your computer for usage of the functions. Library allows you to access the specific package at any given time as long as it was downloaded onto the computer previosuly. Thus, allowing for functions to be masked accordingly based on the developers needs. 
+Install.packages downloads the specific package locally to your computer for usage of the functions. Library allows you to access the specific package at any given time as long as it was downloaded onto the computer previously. Thus, allowing for functions to be masked accordingly with packages based on the developers needs.
 
+## Question 2
 
+```{r}
+library(aRtsy)
+```
+
+The Collatz conjecture equation is a unsolved math problem that asks if repeating two rules will bring two positive whole numbers back down to 1. Specifically if you have a even number n perform the calculation (n/2) and if the number is odd perform the calculation (3n + 1) will it always go back to 1.
+
+The Collatz conjecture is defined as if if $n \%\% 2 = 0$ then $n \gets n/2$ else $n \gets 3n+1$, and the conjecture states that iterating $f$ on any positive integer $n$ will eventually reach $1$.
 
