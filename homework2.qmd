@@ -57,3 +57,15 @@ canvas_collatz(
   n = 10)
 ```
 
+## Question 4
+
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 1:20
+)
+```
+
+This code chunk is passing a sequence vector of 1 to 20. While the previous code chunk passed a integer of 10. The result is a visualized path for each integer 1 through 20 in the collatz sequence producing the same result every time. In comparison to 10 random integer starting values for the collatz sequence being drawn.
+
+Including set.seed(1) into the code would be unnecessary as the output would remain the same since the starting point is already set in the original code with the vector
